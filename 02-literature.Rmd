@@ -1,0 +1,11 @@
+# Paquete GT
+
+## Porque GT
+
+El nombre viene de `gramatica de tablas` o en ingles `grammar of tables`. Arrancamos instalando el paquete.
+
+```{r, eval=FALSE}
+install.packages("gt")
+```
+
+

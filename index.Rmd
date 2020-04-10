@@ -1,0 +1,37 @@
+--- 
+title: "Apuntes de un estudiante de Estadistica (Perú) en el año 2020"
+author: "Daniel Sirlupu"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+biblio-style: apalike
+link-citations: yes
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+
+# Apuntes de blogs en español
+
+Gracias a Yihui Xie tenemos esta bonita forma de presentar ideas en R.
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
+
+```{r, echo=FALSE, warning=FALSE, comment=NA, message=FALSE}
+library(magick)
+R = image_read("R_LOGO.jpg")
+love = image_read("love.jpg")
+
+
+pasion =  image_scale(image_rotate(image_background(R, "none"), 0), "x130")
+image_composite(image_scale(love, "x400"), pasion, offset = "+290+120")
+```
+
+
+
+

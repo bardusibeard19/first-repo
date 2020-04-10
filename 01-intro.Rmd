@@ -1,0 +1,29 @@
+# Detalles a tomar en cuenta {#intro}
+
+- Escribir codigo R `{#label}`
+
+- Referencia un capitulo: Capitulo \@ref(methods).
+
+- Configuracion de imagenes `figure`.
+
+```{r nice-fig, fig.cap='Figura referenciada', out.width='80%', fig.asp=.75, fig.align='center'}
+par(mar = c(4, 4, .1, .1))
+plot(pressure, type = 'b', pch = 19)
+```
+
+
+- Configuracion de tablas `table`.
+
+```{r nice-tab, tidy=FALSE}
+knitr::kable(
+  head(iris, 5), caption = 'Tabla Referenciada!',
+  booktabs = TRUE
+)
+```
+
+## Referencias dentro de este capitulo.
+
+- Referenciar figuras \@ref(fig:nice-fig).
+
+- Referenciar tablas \@ref(tab:nice-tab).
+
